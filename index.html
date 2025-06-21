@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adewole Oluwatobi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <!-- Header -->
+  <header>
+    <h1>Adewole Oluwatobi</h1>
+    <p>Frontend Developer | UI/UX Enthusiast | Computer Science Graduate</p>
+    <button id="button-dark" class="dark-btn">Dark Mode</button>
+  </header>
+
+  <!-- About Me -->
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <h3>Hello, My name is Oluwatobi, and welcome to my personal website!</h3>
+    <img src="images/tobi-img3.jpeg" alt="first image of tobi">   
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Figma (UI Design), Tailwind CSS</li>
+      <li>API Integration, Git & GitHub</li>
+      <li>Teamwork, Communication</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="project-container">
+     <div class="project-1">
+        <h3>Movie App (OMDB API)</h3>
+        <p>A JavaScript web app that fetches movie data using the OMDB API. Built with HTML, CSS, and JS.</p>
+        <img class="project-img" src="images/movieapp.png" alt="Apple Homepage Clone">
+        <div>
+          <a class="project-links" href="https://github.com/Tobiloba1234/MovieKonnect" target="_blank">GitHub Repo</a> |
+          <a class= "project-links" href="https://moviekonnect.netlify.app/?" target="_blank">Live Demo</a>
+        </div>
+       
+      </div>
+
+      <div class="project-2">
+        <h3>A Journal Website</h3>
+        <p>A responsive Apple homepage clone built with Tailwind CSS.</p>
+        <img class="project-img" src="images/journal.png" alt="Apple Homepage Clone">
+        <div>
+          <a class="project-links" href="https://github.com/Tobiloba1234/Every-Beginners-Blog" target="_blank">GitHub Repo</a> |
+          <a  class="project-links" href="https://readytechconnect.netlify.app/" target="_blank">Live Demo</a>
+        </div>
+      
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="container">
+    <h2>Photo Gallery</h2>
+    <p>Here are a few pictures of me and my friends!</p>
+    <div class="row">
+      
+      <div class="column">
+          <img src="images/tobi-img3.jpeg" alt="first image of tobi" onclick="myFunction(this)">
+      </div>
+      <div class="column">
+        <img src="images/Tobi&Jessica.jpeg" alt="second image of tobi with her friend"  onclick="myFunction(this)">
+      </div>
+      <div class="column"> 
+        <img src="images/tobi-img2.jpeg" alt="third image is tobi smiling whie sitting down at a restaurant"  onclick="myFunction(this)">
+      </div>
+      <div class="column">
+        <img src="images/tobi&precious.jpeg" alt="fouth image is tobi smiling with her friend"  onclick="myFunction(this)">
+      </div>
+      <div class="column">
+        <img src="images/tobi.jpeg" alt="tobi making memories during her dinner party"  onclick="myFunction(this)">
+      </div>
+      <div class="column">
+        <img src="images/friends.jpeg" alt="tobi having fun with her friends during trade fair"  onclick="myFunction(this)">
+      </div>
+     
+    </div>
+    
+
+    <div class="container-img">
+      <span class="close-btn" onclick="this.parentElement.style.display='none'">&times;</span>
+      <img id="expanded-img">
+      <div id="img-text"></div>
+    </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+    <p>Email: <a class ="contact-links" href="mailto:tobiadewole43@gmail.com">tobiadewole43@gmail.com</a></p>
+    <p>LinkedIn: <a class="contact-links" href="www.linkedin.com/in/blessing-dewole/" target="_blank">My LinkedIn</a></p>
+    <p>GitHub: <a class="contact-links" href="https://github.com/tobbycodes" target="_blank">My GitHub</a></p>
+    <p>Portfolio:<a  class="contact-links" href="https://adewoletobi.netlify.app/" target="_blank"</p>My Portfolio</p>
+    </div>
+    
+  </section>
+   
+  <script src="index.js"></script>
+</body>
+</html>
