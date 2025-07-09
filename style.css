@@ -7,21 +7,40 @@
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      background: hsl(0, 0%, 96%);
       color: #333;
      
 }
 
+nav{
+    position: fixed;
+    left:0;
+    top:0;
+    background-color: #222;
+    width:60%;
+    visibility:hidden;
+    height:100vh;
+    opacity:1;
+    transform:translateX(-50%);
+    transition: all .3s;
+}
+nav svg{
+    width:1em;
+}
+
+svg{
+    margin:2em 15em 0;
+}
 header, section {
     padding: 2rem;
     width:100%;
     margin: 0auto;
 }
-header {
-    background: #222;
-    color: #fff;
-    text-align: center;
-    padding: 3rem 2rem;
+header{
+    display:flex;
+    color: #112533;
+    justify-content: space-between;
+    align-items: center;
+    padding: .3em 1em;
 }
 h1, h2 {
     margin-bottom: 0.5rem;
@@ -49,13 +68,15 @@ ul{
   flex-wrap: wrap;
   justify-content: center;
   gap:2em;
+  
 }
+
 .row img{
  
     width:100%;
 }
 a {
-    color:rgb(240, 220, 220);
+    color:brown;
     text-decoration: none;
 }
 
@@ -72,6 +93,47 @@ a:hover{
 
 }
 
+/*Nav  */
+.nav-links{
+    padding:4em;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.nav-link {
+  
+    list-style:none;
+    
+}
+
+.nav-link a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.5rem;
+}
+
+.nav-link a:hover{
+  color:peru;
+}
+
+.open-nav{
+    visibility: unset;
+    opacity:1;
+    transform: translateX(0);
+}
+
+.menu-btn{
+    color:#fff;
+    background-color:#112533;
+    border-radius:5px;
+}
+
+.bigger-nav{
+    display:none;
+}
+
+/* Dark Theme */
 .dark-btn{
     border:none;
     border-radius: 10px;
@@ -83,6 +145,13 @@ a:hover{
     color: #fff;
 }
 
+/* Main Section */
+.hero-section{
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 2rem;
+}
 #skills{
 background-color: #222;
 color:white;
@@ -95,9 +164,8 @@ color:white;
     text-align:center ;
 }
 
-.project-1 p{
-    
-}
+
+
 
 .project-img{
    border:5px ridge #112533;
@@ -203,4 +271,24 @@ color:white;
 }
 
    
-    
+@media(min-width:700px){
+    .menu-btn{
+        display:none;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .bigger-nav{
+        display:flex;
+    }
+    .bigger-nav-link{
+        list-style: none;
+    }
+    .bigger-nav-link a{
+        color:#112533;
+        list-style: none;
+        font-size: 1.2rem;
+    }
+}

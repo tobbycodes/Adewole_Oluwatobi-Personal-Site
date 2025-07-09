@@ -1,6 +1,22 @@
+const opennav = document.querySelector('.menu-btn')
+const nav = document.querySelector('nav')
+const exitnav = document.getElementById('exit-btn')
+opennav.style.padding= "1em 1.5em"
+
+opennav.addEventListener("click",()=>{
+   nav.classList.add('open-nav') 
+    
+})
+
+
+exitnav.addEventListener('click',()=>{
+    nav.classList.remove('open-nav')
+})
 function handleDarkMode(){
     const body = document.body
+    
     body.classList.toggle("dark-mode")
+
 
     document.querySelector("header").style.backgroundColor = "white"
     document.querySelector("header").style.color = "#112533"
@@ -17,7 +33,7 @@ function handleDarkMode(){
 
     projectLinks.forEach(plink =>{
         plink.style.color="white"
-        console.log(link)
+      
     })
    
     contactLinks.forEach(clink =>{
